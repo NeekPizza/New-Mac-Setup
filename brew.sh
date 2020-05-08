@@ -51,7 +51,6 @@ CASKS=(
   sequel-pro
   tableplus
   vagrant
-  virtualbox
   visual-studio-code
   vlc
 )
