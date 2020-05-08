@@ -50,9 +50,10 @@ CASKS=(
   spotify
   sequel-pro
   tableplus
-  vagrant
   visual-studio-code
   vlc
+  virtualbox
+  vagrant
 )
 
 echo "Installing cask apps..."
