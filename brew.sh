@@ -17,6 +17,7 @@ brew install bash
 
 PACKAGES=(
   cask
+  curl
   htom
   git
   mysql@5.7
@@ -46,10 +47,15 @@ CASKS=(
   google-chrome
   iterm2
   lastpass
+  logmein-hamachi
   slack
+  spotify
+  sequel-pro
+  tableplus
   vagrant
   virtualbox
   visual-studio-code
+  vlc
 )
 
 echo "Installing cask apps..."
