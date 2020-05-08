@@ -19,3 +19,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Fix permissions
 chmod 700 ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+chmod 755 /usr/local/share/zsh
+chmod 755 /usr/local/share/zsh/site-functions
