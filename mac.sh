@@ -18,10 +18,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Propmpt User for name
 echo "What is your name?"
 read name
-sudo scutil --set ComputerName "${name^}'s Macbook"
-sudo scutil --set HostName "${name^}'s Macbook"
-sudo scutil --set LocalHostName "${name,,}-macbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${name^}'s Macbook"
+sudo scutil --set ComputerName "${(C)name}'s Macbook"
+sudo scutil --set HostName "${(C)name}'s Macbook"
+sudo scutil --set LocalHostName "${(L)name}-macbook"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${(C)name}'s Macbook"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
