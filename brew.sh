@@ -22,6 +22,7 @@ PACKAGES=(
   git
   neofetch
   node
+  php@7.3
   rsync
   tldr
   tree
