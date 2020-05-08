@@ -18,7 +18,7 @@ brew install bash
 PACKAGES=(
   cask
   curl
-  htom
+  htop
   git
   mysql@5.7
   neofetch
