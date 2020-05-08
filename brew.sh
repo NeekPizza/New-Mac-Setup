@@ -12,7 +12,7 @@ fi
 # Update homebrew recipes
 brew update
 
-# Install Bash 4
+# Install Lastest Bash
 brew install bash
 
 PACKAGES=(
