@@ -28,6 +28,8 @@ PACKAGES=(
   tldr
   tree
   tty-clock
+  watch
+  wget
   zsh
 )
 
@@ -48,8 +50,6 @@ CASKS=(
   vagrant
   virtualbox
   visual-studio-code
-  watch
-  wget
 )
 
 echo "Installing cask apps..."
