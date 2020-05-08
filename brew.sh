@@ -20,11 +20,8 @@ PACKAGES=(
   curl
   htop
   git
-  mysql@5.7
   neofetch
   node
-  php@7.3
-  redis
   rsync
   tldr
   tree
