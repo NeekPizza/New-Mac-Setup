@@ -16,10 +16,19 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set computer name (as done via System Preferences → Sharing)
 
 # Propmpt User for name
-sudo scutil --set ComputerName "Nick's Macbook"
-sudo scutil --set HostName "Nick's Macbook"
-sudo scutil --set LocalHostName "nicks-macbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Nick's Macbook"
+echo "What is your Name?"
+read name
+# Capitalize first letter
+capitalized="$(tr '[:lower:]' '[:upper:]' <<< ${name:0:1})${name:1}"
+# Lowercase name
+lowered=$(tr '[:upper:]' '[:lower:]' <<< "${name}")
+echo ${upper}
+echo ${lower}
+
+sudo scutil --set ComputerName "${capitalized}'s Macbook"
+sudo scutil --set HostName "${capitalized}'s Macbook"
+sudo scutil --set LocalHostName "${lowered}-macbook"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${capitalized}'s Macbook"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
