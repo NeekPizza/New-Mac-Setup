@@ -53,7 +53,9 @@ CASKS=(
   vlc
   vagrant
   vagrant-manager
-  virtualbox
+  # Virtual box has issues, uncomment if you would like to attempt to install now.
+  #virtualbox
+  zoom
 )
 
 echo "Installing cask apps..."
