@@ -51,8 +51,9 @@ CASKS=(
   tableplus
   visual-studio-code
   vlc
-  virtualbox
   vagrant
+  vagrant-manager
+  virtualbox
 )
 
 echo "Installing cask apps..."
