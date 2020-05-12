@@ -1,4 +1,4 @@
 # New-Mac-Setup
 Scripts to run for provisioning a new mac
 
-Run: `sh setup.sh`
+You shouldn't have git yet, so just download this repo and run: `sh setup.sh`
